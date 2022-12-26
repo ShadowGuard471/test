@@ -7,7 +7,6 @@ export function SpinningBox({ scale, ...props }) {
   const ref = useRef()
   // Hold state for hovered and clicked events
   const [hovered, hover] = useState(false)
-  const [clicked, click] = useState(false)
   useCursor(hovered)
   // Subscribe this component to the render-loop, rotate the mesh every frame
   useFrame((state, delta) => (ref.current.rotation.x = ref.current.rotation.y += delta))
@@ -16,12 +15,11 @@ export function SpinningBox({ scale, ...props }) {
     <mesh
       {...props}
       ref={ref}
-      scale={clicked ? scale * 1.4 : scale * 1.2}
-      onClick={(event) => click(!clicked)}
+      scale={scale * 0.2}
       onPointerOver={(event) => hover(true)}
       onPointerOut={(event) => hover(false)}>
-      <boxGeometry />
-      <meshStandardMaterial color={hovered ? 'hotpink' : 'indianred'} />
+      <capsuleGeometry args={ [ 3, 6, 10, 10 ] } />
+      <meshStandardMaterial color={hovered ?  'hotpink' : '#15f4ee'} roughness={0.2} metalness={0.2} />
     </mesh>
   )
 }
