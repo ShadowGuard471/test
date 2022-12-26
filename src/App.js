@@ -33,8 +33,8 @@ export default function App() {
             metalness={0.8}
           />
         </mesh>
-        {/* Bunny and a light give it more realism */}
-        <Bun scale={0.3} position={[0, 0, 0.5]} rotation={[0, -Math.PI * 0.85, 0]} />
+        {/* Bench and a light give it more realism */}
+        <Bench scale={0.5} position={[0, 0, 0.5]} rotation={[0, -Math.PI, 0]} />
         <pointLight distance={1.5} intensity={1} position={[-0.15, 0.7, 0]} color="orange" />
       </group>
       {/* Postprocessing */}
@@ -50,12 +50,26 @@ export default function App() {
   )
 }
 
-function Bun(props) {
-  const { nodes } = useGLTF('https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/models/bunny/model.gltf')
+function Bench(props) {
+  const { nodes } = useGLTF('https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/models/bench/model.gltf')
+  console.log (nodes)
   return (
-    <mesh receiveShadow castShadow geometry={nodes.bunny.geometry} {...props}>
+    <group>    
+      <mesh receiveShadow castShadow geometry={nodes.Plane001.geometry} {...props}>
       <meshStandardMaterial color="#222" roughness={0.5} />
-    </mesh>
+      </mesh>
+      <mesh receiveShadow castShadow geometry={nodes.Plane005.geometry} {...props}>
+      <meshStandardMaterial color="#222" roughness={0.5} />
+      </mesh>
+      <mesh receiveShadow castShadow geometry={nodes.bench.geometry} {...props}>
+      <meshStandardMaterial color="#222" roughness={0.5} />
+      </mesh>
+      <mesh receiveShadow castShadow geometry={nodes.Vert001.geometry} {...props}>
+      <meshStandardMaterial color="#222" roughness={0.5} />
+      </mesh>
+  </group>
+
+    
   )
 }
 

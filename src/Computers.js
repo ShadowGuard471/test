@@ -189,11 +189,11 @@ function ScreenText({ invert, x = 0, y = 1.2, ...props }) {
   return (
     <Screen {...props}>
       <PerspectiveCamera makeDefault manual aspect={1 / 1} position={[0, 0, 15]} />
-      <color attach="background" args={[invert ? 'black' : '#35c19f']} />
+      <color attach="background" args={[invert ? 'black' : '#ffbf00']} />
       <ambientLight intensity={0.5} />
       <directionalLight position={[10, 10, 5]} />
-      <Text font="/Inter-Medium.woff" position={[x, y, 0]} ref={textRef} fontSize={4} letterSpacing={-0.1} color={!invert ? 'black' : '#35c19f'}>
-        Poimandres.
+      <Text font="/Inter-Medium.woff" position={[x, y, 0]} ref={textRef} fontSize={4} letterSpacing={-0.1} color={!invert ? 'black' : '#ffbf00'}>
+        Yellow. Studios
       </Text>
     </Screen>
   )

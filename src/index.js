@@ -1,19 +1,42 @@
 import { createRoot } from 'react-dom/client'
 import './styles.css'
 import App from './App'
-import { Logo } from '@pmndrs/branding'
 
 function Overlay() {
   return (
-    <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}>
-      <a href="https://pmnd.rs/" style={{ position: 'absolute', bottom: 40, left: 90, fontSize: '13px' }}>
-        pmnd.rs
-        <br />
-        dev collective
-      </a>
-      <div style={{ position: 'absolute', top: 40, left: 40, fontSize: '13px' }}>ok —</div>
-      <div style={{ position: 'absolute', bottom: 40, right: 40, fontSize: '13px' }}>16/12/2022</div>
-    </div>
+
+
+<div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}>
+  <div style={{ position: 'absolute', bottom: 40, left: 40, width: 40, fontSize: '20px'}} >
+    <a aria-label="Credits" href="https://twitter.com/yellowDstudio" target="_blank" rel="noopener">
+      <div>
+        <svg width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#FFFF33" d="M0 0h15v15H0z"></path>
+        </svg>
+      </div>
+    </a>
+    
+  </div>
+  {/* <a href="https://twitter.com/" style={{ position: 'absolute', bottom: 40, left: 90, fontSize: '13px'}}>
+        Yellow.        <br />
+        Studios
+  </a> */}
+
+  <div style={{ position: 'absolute', top: 40, left: 40, fontSize: '13px' }}>        
+        Yellow.        <br />
+        Studios
+  </div>
+  <div style={{ position: 'absolute', bottom: 40, right: 40, fontSize: '13px', textAlign:'right' }}>
+  <a href="http://exptultra.com/" target="_blank" style={{ fontSize: '13px'}}>
+        EXPTULTRA        <br />
+  </a>
+  <a href="https://twitter.com/warrior3101" target="_blank" style={{ fontSize: '13px'}}>
+        WARRIOR3101      
+  </a>
+  </div>
+  
+</div>
+
   )
 }
 
@@ -21,6 +44,16 @@ createRoot(document.getElementById('root')).render(
   <>
     <App />
     <Overlay />
-    <Logo style={{ position: 'absolute', bottom: 40, left: 40, width: 30 }} />
   </>
 )
+
+
+{/* <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}>
+<div style={{ position: 'absolute', bottom: 40, left: 40, width: 40, fontSize: '20px'}} >Y.S</div>
+<a href="https://twitter.com/" style={{ position: 'absolute', bottom: 40, left: 90, fontSize: '13px' }}>
+  yellow.        <br />
+  studios
+</a>
+<div style={{ position: 'absolute', top: 40, left: 40, fontSize: '13px' }}>ok —</div>
+<div style={{ position: 'absolute', bottom: 40, right: 40, fontSize: '13px' }}>16/12/2022</div>
+</div> */}
