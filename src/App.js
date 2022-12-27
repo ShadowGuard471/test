@@ -52,24 +52,21 @@ export default function App() {
 
 function Bench(props) {
   const { nodes } = useGLTF('https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/models/bench/model.gltf')
-  console.log (nodes)
   return (
-    <group>    
+    <group>
       <mesh receiveShadow castShadow geometry={nodes.Plane001.geometry} {...props}>
-      <meshStandardMaterial color="#222" roughness={0.5} />
+        <meshStandardMaterial color="#222" roughness={0.5} />
       </mesh>
       <mesh receiveShadow castShadow geometry={nodes.Plane005.geometry} {...props}>
-      <meshStandardMaterial color="#222" roughness={0.5} />
+        <meshStandardMaterial color="#222" roughness={0.5} />
       </mesh>
       <mesh receiveShadow castShadow geometry={nodes.bench.geometry} {...props}>
-      <meshStandardMaterial color="#222" roughness={0.5} />
+        <meshStandardMaterial color="#222" roughness={0.5} />
       </mesh>
       <mesh receiveShadow castShadow geometry={nodes.Vert001.geometry} {...props}>
-      <meshStandardMaterial color="#222" roughness={0.5} />
+        <meshStandardMaterial color="#222" roughness={0.5} />
       </mesh>
-  </group>
-
-    
+    </group>
   )
 }
 
