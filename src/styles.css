@@ -16,22 +16,27 @@ body,
 body {
   background: black;
   color: #f0f0f0;
-  font-family: 'Inter';
+  font-family: 'Montserrat', sans-serif;
 }
 
-a {
-  color: #f0f0f0;
-}
 
 a {
   pointer-events: all;
-  color: #f0f0f0;
+  color: white;
   text-decoration: none;
+  font-family: 'EB Garamond', serif;
+  transition: color 0.2s ease-in;
+}
+
+a:hover {
+  color: #b6b4a4;
+  transition: color 0.2s ease-out;
 }
 
 svg {
   fill: #f0f0f0;
 }
+
 
 @keyframes fade-in {
   from {
