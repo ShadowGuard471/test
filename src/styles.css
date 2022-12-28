@@ -28,7 +28,8 @@ p {
 
 a {
   pointer-events: all;
-  color: white;
+  /* color: white; */
+  color: yellow;
   text-decoration: none;
   font-family: 'EB Garamond', serif;
   transition: color 0.2s ease-in;
