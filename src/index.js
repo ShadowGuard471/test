@@ -23,7 +23,7 @@ function Overlay() {
         Studios
   </a> */}
 
-      <div style={{ position: 'absolute', top: 40, left: 40, fontSize: '19px' }}>
+      <div style={{ position: 'absolute', top: 40, left: 40, fontSize: '18px' }}>
         Y E L L O W . <br />S T U D I O S
       </div>
 
