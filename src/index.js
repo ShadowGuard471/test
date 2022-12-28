@@ -14,6 +14,10 @@ function Overlay() {
           </div>
         </a>
       </div>
+      <p style={{ position: 'absolute', bottom: 30, left: 90, fontSize: '12px' }}>
+        WEB3 CREATIVE STUDIO STARTUP
+        <br />@ C Y B E R V E R S E
+      </p>
       {/* <a href="https://twitter.com/" style={{ position: 'absolute', bottom: 40, left: 90, fontSize: '13px'}}>
         Yellow.        <br />
         Studios
@@ -23,14 +27,13 @@ function Overlay() {
         Y E L L O W . <br />S T U D I O S
       </div>
 
-      <div style={{ position: 'absolute', bottom: 40, right: 40, fontSize: '14px', textAlign: 'right' }}>
+      <div style={{ position: 'absolute', top: 40, right: 40, fontSize: '13px', textAlign: 'right' }}>
         <a href="https://twitter.com/warrior3101" target="_blank">
-          WARRIOR3101 <br />
+          / WARRIOR3101 <br />
         </a>
         <a href="http://exptultra.com/" target="_blank">
-          EXPTULTRA
+          / EXPTULTRA
         </a>
-
       </div>
     </div>
   )

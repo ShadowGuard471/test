@@ -17,8 +17,14 @@ body {
   background: black;
   color: #f0f0f0;
   font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
 }
 
+p {
+  color: #f0f0f0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
 
 a {
   pointer-events: all;
@@ -26,6 +32,7 @@ a {
   text-decoration: none;
   font-family: 'EB Garamond', serif;
   transition: color 0.2s ease-in;
+  font-weight: 400;
 }
 
 a:hover {
@@ -36,7 +43,6 @@ a:hover {
 svg {
   fill: #f0f0f0;
 }
-
 
 @keyframes fade-in {
   from {
