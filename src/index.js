@@ -27,7 +27,7 @@ function Overlay() {
         Y E L L O W . <br />S T U D I O S
       </div>
 
-      <div style={{ position: 'absolute', top: 40, right: 40, fontSize: '12px', textAlign: 'right' }}>
+      <div style={{ position: 'absolute', top: 40, right: 40, fontSize: '13px', textAlign: 'right' }}>
         <a href="https://twitter.com/warrior3101" target="_blank">
           / WARRIOR3101 <br />
         </a>
