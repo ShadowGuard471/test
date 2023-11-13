@@ -28,7 +28,7 @@ function Overlay() {
       </div>
 
       <div style={{ position: 'absolute', top: 40, right: 40, fontSize: '16px', textAlign: 'right' }}>
-        <a href="https://twitter.com/warrior3101" target="_blank">
+        <a href="#" target="_blank">
           [Home] <br />
         </a>
       </div>

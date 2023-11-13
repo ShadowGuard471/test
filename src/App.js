@@ -41,7 +41,7 @@ export default function App() {
           />
         </mesh>
         {/* Bench and a light give it more realism */}
-        <Bench scale={0.5} position={[0, 0, 0.5]} rotation={[0, -Math.PI, 0]} />
+        {/* <Bench scale={0.5} position={[0, 0, 0.5]} rotation={[0, -Math.PI, 0]} /> */}
         <pointLight distance={1.5} intensity={1} position={[-0.15, 0.7, 0]} color="orange" />
       </group>
       {/* Postprocessing */}
@@ -57,25 +57,25 @@ export default function App() {
   )
 }
 
-function Bench(props) {
-  const { nodes } = useGLTF('https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/models/bench/model.gltf')
-  return (
-    <group>
-      <mesh receiveShadow castShadow geometry={nodes.Plane001.geometry} {...props}>
-        <meshStandardMaterial color="#222" roughness={0.5} />
-      </mesh>
-      <mesh receiveShadow castShadow geometry={nodes.Plane005.geometry} {...props}>
-        <meshStandardMaterial color="#222" roughness={0.5} />
-      </mesh>
-      <mesh receiveShadow castShadow geometry={nodes.bench.geometry} {...props}>
-        <meshStandardMaterial color="#222" roughness={0.5} />
-      </mesh>
-      <mesh receiveShadow castShadow geometry={nodes.Vert001.geometry} {...props}>
-        <meshStandardMaterial color="#222" roughness={0.5} />
-      </mesh>
-    </group>
-  )
-}
+// function Bench(props) {
+//   const { nodes } = useGLTF('https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/models/bench/model.gltf')
+//   return (
+//     <group>
+//       <mesh receiveShadow castShadow geometry={nodes.Plane001.geometry} {...props}>
+//         <meshStandardMaterial color="#222" roughness={0.5} />
+//       </mesh>
+//       <mesh receiveShadow castShadow geometry={nodes.Plane005.geometry} {...props}>
+//         <meshStandardMaterial color="#222" roughness={0.5} />
+//       </mesh>
+//       <mesh receiveShadow castShadow geometry={nodes.bench.geometry} {...props}>
+//         <meshStandardMaterial color="#222" roughness={0.5} />
+//       </mesh>
+//       <mesh receiveShadow castShadow geometry={nodes.Vert001.geometry} {...props}>
+//         <meshStandardMaterial color="#222" roughness={0.5} />
+//       </mesh>
+//     </group>
+//   )
+// }
 
 function CameraRig() {
   useFrame((state, delta) => {
